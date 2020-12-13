@@ -8,7 +8,7 @@ A simple web app written in Go, displaying time for Warsaw, New York and Sydney
    -src/main.go
    -Dockerfile
 ```
- Insert in main.go and save:
+ Insert into main.go and save:
  ```
  package main
 
@@ -72,7 +72,7 @@ func main() {
 	// set environment variable PORT if you want to change port
 }
  ```
-#Insert in Dockerfile and save :
+#Insert into Dockerfile and save :
 
 ```
 FROM golang:latest as builder
