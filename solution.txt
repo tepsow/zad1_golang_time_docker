@@ -1,0 +1,20 @@
+#Make directory and choose it
+mkdir /goapp
+cd /goapp
+
+#Move goapp_project to go-app folder and unzip project files
+tar -xf goapp_project.tar.gz
+
+Move to go-docker folder
+cd ./go-docker
+
+#To build image and run container from go-docker folder
+docker build -t goapp .
+
+#To run container 
+docker run --rm -it -p 8080:8080 goapp
+
+
+#To load docker image from directory where goapp.tar.gz located
+docker load <./goapp.tar.gz
+
