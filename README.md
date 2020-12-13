@@ -90,9 +90,7 @@ RUN xz -d -c /usr/local/upx-3.94-amd64_linux.tar.xz | \
 RUN go get github.com/golang/dep/cmd/dep
 # create a working directory
 WORKDIR /go/src/app
-# add Gopkg.toml and Gopkg.lock
-ADD Gopkg.toml Gopkg.toml
-ADD Gopkg.lock Gopkg.lock
+RUN dep init
 # install packages
 RUN dep ensure --vendor-only
 # add source code
