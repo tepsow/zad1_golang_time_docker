@@ -1,13 +1,14 @@
 # go-docker
 
 A simple web app written in Go, displaying time for Warsaw, New York and Sydney
-Docker image size 1.64MB
-Create project next project structure:
-- goapp
- -src/main.go
- -Dockerfile
- 
- Insert in main go and save:
+# Docker image size 1.64MB
+# Create next project structure:
+```
+- goapp/
+   -src/main.go
+   -Dockerfile
+```
+ Insert in main.go and save:
  ```
  package main
 
